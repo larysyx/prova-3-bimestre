@@ -1,8 +1,8 @@
 import type { HttpContextContract } from '@ioc:Adonis/Core/HttpContext'
-import Topic from 'App/Models/Topic'
-import TopicValidator from 'App/Validators/TopicValidator'
+import Topic from 'App/Models/Livro'
+import TopicValidator from 'App/Validators/LivroValidator'
 
-export default class TopicsController {
+export default class LivrosController {
   public async index({ }: HttpContextContract) {
     const topic = await Topic.all()
     return topic
